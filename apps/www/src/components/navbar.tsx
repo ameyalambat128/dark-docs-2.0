@@ -11,7 +11,7 @@ function Logo() {
         alt="Logo"
         width={40}
         height={40}
-        className="h-auto max-w-full drop-shadow-2xl"
+        className="h-8 w-8 max-w-full drop-shadow-2xl lg:h-10 lg:w-10"
       />
     </Link>
   );
@@ -26,7 +26,37 @@ export default function Navbar() {
           Dark Docs 2.0
         </span>
       </div>
-      <section className="flex items-center gap-4">
+      <section className="flex items-center space-x-2 lg:space-x-6">
+        <div className="flex items-center space-x-2 lg:space-x-4">
+          <a
+            href="https://x.com/darkdocs2"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="X (Twitter)"
+          >
+            <Image
+              src="/social-icons/x-dark.svg"
+              alt="X (Twitter)"
+              width={20}
+              height={20}
+              className="h-4 w-4 opacity-80 transition hover:opacity-100 lg:h-6 lg:w-6"
+            />
+          </a>
+          <a
+            href="https://github.com/ameyalambat128/dark-docs-2.0"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <Image
+              src="/social-icons/github-dark.svg"
+              alt="GitHub"
+              width={22}
+              height={22}
+              className="h-5 w-5 opacity-80 transition hover:opacity-100 lg:h-6 lg:w-6"
+            />
+          </a>
+        </div>
         {/* Product Hunt Badge - Large */}
         <a
           href="https://www.producthunt.com/products/docs-dark-2-0?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-dark&#0045;docs&#0045;2&#0045;0"
@@ -52,9 +82,9 @@ export default function Navbar() {
           <img
             src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1002154&theme=light&t=1754457725109"
             alt="Dark Docs 2.0 - The Dark Theme Google 'Forgot' | Product Hunt"
-            style={{ width: "90px", height: "20px" }}
-            width="90"
-            height="20"
+            style={{ width: "100px", height: "22px" }}
+            width="80"
+            height="18"
           />
         </a>
         {/* Product Hunt Badge - Mobile */}
