@@ -23,7 +23,7 @@ export default function Navbar() {
       <div className="flex items-center gap-2 md:gap-4">
         <Logo />
         <span
-          className="text-lg font-bold tracking-tighter md:text-xl bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-neutral-400"
+          className="bg-gradient-to-b from-white via-white to-neutral-400 bg-clip-text text-lg font-bold tracking-tighter text-transparent md:text-xl"
           style={{
             textShadow: "0 1px 2px rgba(0,0,0,0.2)",
           }}
