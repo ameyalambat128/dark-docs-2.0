@@ -25,9 +25,14 @@ export default function Home() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="mb-8 lg:mb-12"
+              className="mb-8 overflow-visible lg:mb-12"
             >
-              <h1 className="mb-6 text-center text-4xl font-bold tracking-tight md:text-6xl lg:text-7xl">
+              <h1
+                className="mb-6 bg-gradient-to-b from-white via-white to-neutral-400 bg-clip-text pb-3 text-center text-4xl font-bold leading-normal tracking-tight text-transparent md:text-6xl lg:text-7xl"
+                style={{
+                  textShadow: "0 1px 2px rgba(0,0,0,0.2)",
+                }}
+              >
                 {/* Mobile version - two lines */}
                 <div className="block sm:hidden">
                   <div>The Dark Theme,</div>

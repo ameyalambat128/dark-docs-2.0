@@ -22,7 +22,12 @@ export default function Navbar() {
     <nav className="flex items-center justify-between py-4 lg:py-8">
       <div className="flex items-center gap-2 md:gap-4">
         <Logo />
-        <span className="text-lg font-bold tracking-tighter md:text-xl">
+        <span
+          className="text-lg font-bold tracking-tighter md:text-xl bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-neutral-400"
+          style={{
+            textShadow: "0 1px 2px rgba(0,0,0,0.2)",
+          }}
+        >
           Dark Docs 2.0
         </span>
       </div>
