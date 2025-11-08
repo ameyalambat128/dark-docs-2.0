@@ -1,6 +1,5 @@
 "use client"; // required if using in App Router pages
 
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -31,19 +30,14 @@ const browsers = [
   },
 ];
 
+function detectBrowser() {
+  if (typeof window === "undefined") return browsers[0];
+  const ua = navigator.userAgent;
+  return browsers.find((browser) => browser.match.test(ua)) || browsers[0]; // Default to Chrome if no match
+}
+
 export default function AddToBrowserButton() {
-  const [browser, setBrowser] = useState<(typeof browsers)[0] | null>(null);
-
-  function detectBrowser() {
-    const ua = navigator.userAgent;
-    return browsers.find((browser) => browser.match.test(ua)) || browsers[0]; // Default to Chrome if no match
-  }
-
-  useEffect(() => {
-    setBrowser(detectBrowser());
-  }, []);
-
-  if (!browser) return null;
+  const browser = detectBrowser();
 
   return (
     <div className="flex gap-4">

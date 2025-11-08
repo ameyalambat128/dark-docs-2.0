@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import AddToBrowserButton from "./add-to-browser-button";
 
 function Logo() {
   return (
@@ -69,12 +68,12 @@ export default function Navbar() {
           rel="noopener noreferrer"
           className="hidden lg:block"
         >
-          <img
+          <Image
             src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1002154&theme=light&t=1754457725109"
             alt="Dark Docs 2.0 - The Dark Theme Google 'Forgot' | Product Hunt"
+            width={160}
+            height={34}
             style={{ width: "160px", height: "34px" }}
-            width="160"
-            height="34"
           />
         </a>
         {/* Product Hunt Badge - Small */}
@@ -84,12 +83,12 @@ export default function Navbar() {
           rel="noopener noreferrer"
           className="hidden sm:block lg:hidden"
         >
-          <img
+          <Image
             src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1002154&theme=light&t=1754457725109"
             alt="Dark Docs 2.0 - The Dark Theme Google 'Forgot' | Product Hunt"
+            width={100}
+            height={22}
             style={{ width: "100px", height: "22px" }}
-            width="80"
-            height="18"
           />
         </a>
         {/* Product Hunt Badge - Mobile */}
@@ -99,12 +98,12 @@ export default function Navbar() {
           rel="noopener noreferrer"
           className="block sm:hidden"
         >
-          <img
+          <Image
             src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1002154&theme=light&t=1754457725109"
             alt="Dark Docs 2.0 - The Dark Theme Google 'Forgot' | Product Hunt"
+            width={120}
+            height={26}
             style={{ width: "120px", height: "26px" }}
-            width="120"
-            height="26"
           />
         </a>
       </section>
